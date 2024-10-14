@@ -1,0 +1,54 @@
+/* Styles for the body and general typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Style for paragraphs */
+p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Main section styling */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Article styling */
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+/* Aside styling */
+aside {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    width: 25%;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
