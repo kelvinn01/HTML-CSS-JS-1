@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 6</title>
+    <title>Assignment 7</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Assignment 6 - Form </h1>
+    <h1>Assignment 7</h1>
 
-    <form action="#" method="post">
+    <!-- Updated form with an ID -->
+    <form id="userForm" action="#" method="post">
         <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
@@ -52,9 +53,38 @@
                 <option value="other">Other</option>
             </select><br><br>
 
-            <input type="submit" value="Submit">
+            <!-- New button to trigger JavaScript -->
+            <button type="button" onclick="displayFormData()">Submit</button>
             <input type="reset" value="Reset">
         </fieldset>
     </form>
+
+    <!-- Container to display form data -->
+    <div id="formDataDisplay"></div>
+
+    <!-- JavaScript code -->
+    <script>
+        function displayFormData() {
+            // Get the form element
+            const form = document.getElementById('userForm');
+            const formData = new FormData(form);
+
+            // Create or find the div to display the data
+            let outputDiv = document.getElementById('formDataDisplay');
+            if (!outputDiv) {
+                outputDiv = document.createElement('div');
+                outputDiv.id = 'formDataDisplay';
+                document.body.appendChild(outputDiv);
+            }
+
+            // Clear previous output
+            outputDiv.innerHTML = '<h2>Form Data:</h2>';
+
+            // Display form data
+            formData.forEach((value, key) => {
+                outputDiv.innerHTML += `<p><strong>${key}:</strong> ${value}</p>`;
+            });
+        }
+    </script>
 </body>
-</html>
+</html> 
