@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  fieldset {
+    border: 1px solid #aaa;
+    padding: 10px;
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  input, textarea, select {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: calc(100% - 170px);
+  }
+  
+  input[type="submit"], input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+  }
