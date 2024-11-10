@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive and Accessible Design Assignment</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li tabindex="1"><a href="https://www.columbusstate.edu">CSU Website</a></li>
+            <li tabindex="2"><a href="https://www.w3.org/WAI/standards-guidelines/">Web Accessibility Standards</a></li>
+            <li tabindex="3"><a href="https://www.responsinator.com/">Responsive Design Checker</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img src="IMG_5743.jpeg" alt="car">
+    </main>
+
+    <aside>
+        <svg width="100" height="100" role="img" aria-label="Logo">
+            <!-- SVG content -->
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="lightgray" />
+            <text x="50" y="55" font-size="20" text-anchor="middle" fill="black">Logo</text>
+        </svg>
+    </aside>
+
+    <footer>
+        <p>Kelvin Onoigboria | Fall 2024</p>
+    </footer>
+</body>
+</html>
